@@ -11,4 +11,5 @@
 
 <header data-module="HEADER">
   <p>This is header module</p>
+  <p>New content is pushed</p>
 </header>

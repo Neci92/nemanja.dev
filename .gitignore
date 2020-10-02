@@ -1,7 +1,5 @@
 node_modules
 dist
-assets/css
-assets/js
 gulpfile.js
 package-lock.json
 package.json

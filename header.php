@@ -9,7 +9,10 @@
 
 <?php wp_head(); ?>
 
-<header data-module="HEADER">
-  <p>This is header module</p>
-  <p>New content is pushed twice</p>
+<header class="header container" data-module="HEADER">
+  <a href="/">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo.svg" alt="Nemanja.dev Logo">
+  </a>
+
+  <?php require('template-parts/navigation.php'); ?>
 </header>

@@ -1,8 +1,0 @@
-node_modules
-dist
-gulpfile.js
-package-lock.json
-package.json
-readme.node_modules
-webpack.config.js
-yarn.lock

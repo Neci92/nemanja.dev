@@ -3,10 +3,8 @@
         <div class="latest-articles__wrapper">
             <h2 class="h2 latest-articles__title">Latest Articles</h2>
 
-     
             <ul>
-                
-                <?php if (  false /*$the_query->have_posts() */ ) : while ( $the_query->have_posts() ) : the_post(); ?>
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                     <li class="article-card">
                         <a href="<?php the_permalink(); ?>">
                             <h3 class="h3"><?php the_title(); ?></h3>
@@ -25,7 +23,7 @@
                 <?php endif; ?>
                 
 
-                
+
             </ul>
 
         </div>

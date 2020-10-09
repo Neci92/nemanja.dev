@@ -9,10 +9,13 @@
 
 <?php wp_head(); ?>
 
-<header class="header container" data-module="HEADER">
-  <a href="/">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo.svg" alt="Nemanja.dev Logo">
-  </a>
+<div class="container">
+  <header class="header" data-module="HEADER">
+    <a class="header__logo button button--icon" href="/">
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo.svg" alt="Nemanja.dev Logo">
+      <span class="header__logo-text">Home</span>
+    </a>
 
-  <?php require('template-parts/navigation.php'); ?>
-</header>
+    <?php require('template-parts/navigation.php'); ?>
+  </header>
+</div>

@@ -1,18 +1,21 @@
 <nav class="navigation">
     <ul class="navigation__list">
       <li class="navigation__list-item">
-        <a href="#">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo.svg" alt="Nemanja.dev Logo">
+        <a class="button button--icon" href="#">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/User icon.svg" alt="User icon">
+          <span class="navigation__link-text">About me</span>
         </a>
       </li>
       <li class="navigation__list-item">
-        <a href="#">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo.svg" alt="Nemanja.dev Logo">
+        <a class="button button--icon" href="#">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Loupe button.svg" alt="Search icon">
+          <span class="navigation__link-text">Search</span>
         </a>
       </li>
       <li class="navigation__list-item">
-        <a href="#">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo.svg" alt="Nemanja.dev Logo">
+        <a class="button button--icon" href="#">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Mail button.svg" alt="Contact me">
+          <span class="navigation__link-text">Contact me</span>
         </a>
       </li>
     </ul>

@@ -6,11 +6,12 @@
     <meta name="theme-color" content="#171819">
     <meta name="msapplication-navbutton-color" content="#171819">
     <meta name="apple-mobile-web-app-status-bar-style" content="#171819">
+    <?php wp_head(); ?>
     <title><?php wp_title("|", true, "right"); ?>Nemanja.dev </title>
+
 </head>
 <body>
 
-<?php wp_head(); ?>
 
 <div class="container">
   <header class="header" data-module="HEADER">

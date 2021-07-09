@@ -1,16 +1,10 @@
-<section class="latest-articles">
+<section class="all-articles">
     <div class="container">
-        <div class="latest-articles__wrapper">
-            <h2 class="h2 latest-articles__title">Latest Articles</h2>
-
+        <div class="all-articles__wrapper">
             <ul>
-            <?php $lastposts = get_posts( array(
-                        'posts_per_page' => 3
-                    ) );
+            <?php if(have_posts()) :
+                        while(have_posts()) : the_post(); ?>
 
-                    if ( $lastposts ) {
-                        foreach ( $lastposts as $post ) :
-                            setup_postdata( $post ); ?>
                             <li class="article-card">
                                 <a href="<?php the_permalink(); ?>">
                                     <h3 class="h3"><?php the_title(); ?></h3>
@@ -24,17 +18,14 @@
                                     </div>
                                 <?php endif; ?>
                             </li>
-                        <?php
-                        endforeach; 
-                        wp_reset_postdata();
-                    }
-                ?>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
             </ul>
-
-            <a class="latest-articles__link" href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">See All Articles</a>
-
-
-
+            
+            <div class="all-articles__pagination">
+                <?php echo paginate_links(); ?>
+            </div>
+            
         </div>
     </div>
 </section>

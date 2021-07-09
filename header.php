@@ -16,7 +16,9 @@
   <header class="header" data-module="HEADER">
     <a class="header__logo button button--icon" title="Home" href="/">
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo.svg" alt="Nemanja.dev Logo">
-      <span class="header__logo-text">Home</span>
+      <div class="header__logo-text-wrapper">
+        <span class="header__logo-text">Home</span>
+      </div>
     </a>
 
     <?php require('template-parts/navigation.php'); ?>

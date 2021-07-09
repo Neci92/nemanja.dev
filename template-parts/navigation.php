@@ -1,4 +1,4 @@
-<nav class="navigation">
+<!-- <nav class="navigation">
     <ul class="navigation__list">
       <li class="navigation__list-item">
         <a class="button button--icon" title="About me" href="#">
@@ -19,4 +19,4 @@
         </a>
       </li>
     </ul>
-</nav>
+</nav> -->

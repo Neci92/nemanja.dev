@@ -1,11 +1,11 @@
 <section class="all-articles">
     <div class="container">
-        <div class="all-articles__wrapper">
+        <div class="box-wrapper">
             <ul>
             <?php if(have_posts()) :
                         while(have_posts()) : the_post(); ?>
 
-                            <li class="article-card">
+                            <li class="box-wrapper article-card">
                                 <a href="<?php the_permalink(); ?>">
                                     <h3 class="h3"><?php the_title(); ?></h3>
                                 </a>

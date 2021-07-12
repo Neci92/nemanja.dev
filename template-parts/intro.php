@@ -1,6 +1,6 @@
 <section class="intro">
     <div class="container">
-        <div class="intro__wrapper">
+        <div class="intro__wrapper box-wrapper">
             <div>
                 <h1 class="h1 intro__header"><?php the_title(); ?></h1>
                 <div class="intro__text">

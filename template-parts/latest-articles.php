@@ -1,7 +1,7 @@
 <section class="latest-articles">
     <div class="container">
         <div class="latest-articles__wrapper">
-            <h2 class="h2 latest-articles__title">Latest Articles</h2>
+            <h2 class="h2 mb latest-articles__title">Latest Articles</h2>
 
             <ul>
             <?php $lastposts = get_posts( array(
@@ -11,7 +11,7 @@
                     if ( $lastposts ) {
                         foreach ( $lastposts as $post ) :
                             setup_postdata( $post ); ?>
-                            <li class="article-card">
+                            <li class="box-wrapper article-card">
                                 <a href="<?php the_permalink(); ?>">
                                     <h3 class="h3"><?php the_title(); ?></h3>
                                 </a>

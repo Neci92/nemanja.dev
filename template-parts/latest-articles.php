@@ -17,7 +17,7 @@
                                 </a>
                                 <date class="date article-card__date"><?php echo get_the_date(); ?></date>
                                 <p><?php the_excerpt(); ?></p>
-                                <a class="button button--primary article-card__button" href="<?php the_permalink(); ?>">Read more</a>
+                                <a class="button button--primary article-card__button" title="Read more" href="<?php the_permalink(); ?>">Read more</a>
                                 <?php if ( has_post_thumbnail() ) : ?>
                                     <div class="article-card__image">
                                         <?php the_post_thumbnail('medium'); ?>
@@ -31,10 +31,7 @@
                 ?>
             </ul>
 
-            <a class="latest-articles__link" href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">See All Articles</a>
-
-
-
+            <a class="latest-articles__link" title="See All Articles" href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">See All Articles</a>
         </div>
     </div>
 </section>

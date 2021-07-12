@@ -23,7 +23,6 @@
 
         <?php require('template-parts/navigation.php'); ?>
       </div>
-      TEST
 
     </div>
   </header>

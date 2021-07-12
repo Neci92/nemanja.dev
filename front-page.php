@@ -1,8 +1,9 @@
 <?php get_header(); ?>
   
-  <div data-router-view="front-page">
+  
+  <main data-barba="container" data-barba-namespace="front-page">
     <?php require('template-parts/intro.php'); ?>
     <?php require('template-parts/latest-articles.php'); ?>
-  </div>
+  </main>
 
 <?php get_footer(); ?>

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<div data-router-view="index">
+<main data-barba="container" data-barba-namespace="index">
   This is index.php
-</div>
+</main>
 
 <?php get_footer(); ?>

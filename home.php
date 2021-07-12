@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-  <div data-router-view="home">
+  <main data-barba="container" data-barba-namespace="home">
     <?php require('template-parts/all-articles.php'); ?>
-  </div>
+  </main>
 
 <?php get_footer(); ?>

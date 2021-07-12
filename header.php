@@ -10,7 +10,7 @@
     <title><?php wp_title("|", true, "right"); ?>Nemanja.dev </title>
 
 </head>
-<body data-module="HIGHWAY">
+<body data-module="BARBA" data-barba="wrapper">
   <header class="header" data-module="HEADER">
     <div class="container">
       <div class="header__container">
@@ -27,5 +27,4 @@
     </div>
   </header>
 
-<main data-router-wrapper>
 

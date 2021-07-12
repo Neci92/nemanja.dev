@@ -1,4 +1,4 @@
-
+</main>
 <footer data-module="FOOTER" class="footer">
     <div class="container">
         <div class="footer__wrapper">

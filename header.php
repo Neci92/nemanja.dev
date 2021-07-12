@@ -10,18 +10,22 @@
     <title><?php wp_title("|", true, "right"); ?>Nemanja.dev </title>
 
 </head>
-<body>
-
-
-<div class="container">
+<body data-module="HIGHWAY">
   <header class="header" data-module="HEADER">
-    <a class="header__logo button button--icon" title="Home" href="/">
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo.svg" alt="Nemanja.dev Logo">
-      <div class="header__logo-text-wrapper">
-        <span class="header__logo-text">Home</span>
-      </div>
-    </a>
+    <div class="container">
+      <div class="header__container">
+        <a class="header__logo button button--icon" title="Home" href="<?php echo home_url(); ?>">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo.svg" alt="Nemanja.dev Logo">
+          <div class="header__logo-text-wrapper">
+            <span class="header__logo-text">Home</span>
+          </div>
+        </a>
 
-    <?php require('template-parts/navigation.php'); ?>
+        <?php require('template-parts/navigation.php'); ?>
+      </div>
+
+    </div>
   </header>
-</div>
+
+<main data-router-wrapper>
+

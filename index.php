@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<main>
+<div data-router-view="index">
   This is index.php
-</main>
+</div>
 
 <?php get_footer(); ?>

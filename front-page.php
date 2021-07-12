@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-
-<main>
-  <?php require('template-parts/intro.php'); ?>
-  <?php require('template-parts/latest-articles.php'); ?>
-</main>
+  
+  <div data-router-view="front-page">
+    <?php require('template-parts/intro.php'); ?>
+    <?php require('template-parts/latest-articles.php'); ?>
+  </div>
 
 <?php get_footer(); ?>

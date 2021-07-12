@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<main>
-  <?php require('template-parts/all-articles.php'); ?>
-</main>
+  <div data-router-view="home">
+    <?php require('template-parts/all-articles.php'); ?>
+  </div>
 
 <?php get_footer(); ?>

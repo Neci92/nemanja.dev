@@ -1,4 +1,4 @@
-<section class="all-articles">
+<section class="articles-loop">
     <div class="container">
         <div class="box-wrapper">
             <ul>
@@ -22,7 +22,7 @@
                     <?php endif; ?>
             </ul>
             
-            <div class="all-articles__pagination">
+            <div class="articles-loop__pagination">
                 <?php echo paginate_links(); ?>
             </div>
             
